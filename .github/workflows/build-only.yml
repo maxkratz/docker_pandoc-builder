@@ -52,7 +52,6 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t pandoc-builder .
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx

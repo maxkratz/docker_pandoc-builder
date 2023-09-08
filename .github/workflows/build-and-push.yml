@@ -41,7 +41,7 @@ jobs:
 
   build-and-push-image:
     needs: [collect-github-api-artifacts]
-    runs-on: [ubuntu-22.04]
+    runs-on: [self-hosted]
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3

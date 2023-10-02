@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -q && \
     apt-get upgrade -yq && \
     apt-get install -yq \
-        pandoc zip
+        pandoc zip librsvg2-bin
 
 RUN mkdir -p /root/.pandoc/templates
 COPY Eisvogel.zip /tmp

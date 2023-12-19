@@ -34,7 +34,7 @@ jobs:
           echo "Found URL: $LATEST_SRC"
           wget "${LATEST_SRC// }"
       - name: Upload template artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Eisvogel.zip
           path: Eisvogel.zip
@@ -44,9 +44,9 @@ jobs:
     runs-on: [self-hosted]
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Download template
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: Eisvogel.zip
       - name: Build Docker image
@@ -57,7 +57,7 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       - name: Build image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v5
         with:
           context: .
           push: false

@@ -1,6 +1,6 @@
 # Dockerfile to create a Pandoc render image with Eisvogel template installed
 
-FROM maxkratz/texlive:2023
+FROM maxkratz/texlive:2024
 LABEL maintainer="Max Kratz <account@maxkratz.com>"
 ENV DEBIAN_FRONTEND=noninteractive
 

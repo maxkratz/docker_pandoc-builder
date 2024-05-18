@@ -40,3 +40,16 @@ The following packages are installed in this Docker image:
 
 ## Issues & Contribution
 If you find any problems, bugs or missing packages, feel free to open an [issue on Github](https://github.com/maxkratz/docker_pandoc-builder/issues).
+
+
+## Runner requirements
+Currently, all actions must be run by a self-hosted GitHub runner, because GitHub-hosted runners do not have enough storage available.
+
+### Self-hosted Linux-based runners
+In order to run the "GitHub Actions" pipeline on a self-hosted runner, you must ensure that you have at least one properly configured Linux-based runner added to this GitHub project.
+
+Required packages (at least):
+- `curl`
+- `wget`
+- `grep`
+- `docker` (including buildx plugin)

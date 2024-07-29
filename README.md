@@ -5,9 +5,6 @@
 *Unofficial* [Pandoc](https://github.com/jgm/pandoc) Dockerfile.
 Prebuild images can be found at this [Dockerhub repository](https://hub.docker.com/r/maxkratz/pandoc-builder).
 
-*Unofficial* [TeX Live](https://www.tug.org/texlive/) Dockerfile for various versions.
-Prebuild images can be found at this [Dockerhub repository](https://hub.docker.com/r/maxkratz/texlive).
-
 
 ## Quickstart
 After installing [Docker](https://docs.docker.com/get-docker/), just run the following command inside your LaTeX workspace.
@@ -39,7 +36,7 @@ The following packages are installed in this Docker image:
 
 
 ## Issues & Contribution
-If you find any problems, bugs or missing packages, feel free to open an [issue on Github](https://github.com/maxkratz/docker_pandoc-builder/issues).
+If you find any problems, bugs or missing packages, feel free to open an [issue on GitHub](https://github.com/maxkratz/docker_pandoc-builder/issues).
 
 
 ## Runner requirements
@@ -53,3 +50,7 @@ Required packages (at least):
 - `wget`
 - `grep`
 - `docker` (including buildx plugin)
+
+
+## License
+This project is licensed under the Apache License v2.0 - see the [LICENSE](./LICENSE) file for more details.

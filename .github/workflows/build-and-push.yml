@@ -46,7 +46,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v6
       - name: Download template
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: Eisvogel.zip
       - name: Build Docker image
